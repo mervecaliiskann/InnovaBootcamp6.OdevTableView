@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oxb-rx-CAX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InnovaBootcamp6_OdevTableview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fatura ödeme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxB-L7-HNy">
+                                <rect key="frame" x="133.66666666666666" y="109" width="125.99999999999997" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" name="hesaplarClr"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="text.bubble" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yhe-bs-rwr">
+                                <rect key="frame" x="318" y="45.333333333333343" width="45" height="44"/>
+                                <color key="tintColor" name="EnparaClr"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="EGR-Mf-u6j"/>
+                                    <constraint firstAttribute="height" constant="45" id="hmj-jj-0WX"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ColorStack" translatesAutoresizingMaskIntoConstraints="NO" id="hTp-45-BdH">
+                                <rect key="frame" x="0.0" y="135" width="393" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="mx4-h2-rrR"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KA8-5g-GIc">
+                                <rect key="frame" x="0.0" y="140" width="393" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fatura tipi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhe-6q-bSw">
+                                        <rect key="frame" x="155" y="10" width="83" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="greenCizgi"/>
+                                <constraints>
+                                    <constraint firstItem="uhe-6q-bSw" firstAttribute="top" secondItem="KA8-5g-GIc" secondAttribute="top" constant="10" id="F2g-z3-nyF"/>
+                                    <constraint firstItem="uhe-6q-bSw" firstAttribute="centerX" secondItem="KA8-5g-GIc" secondAttribute="centerX" id="U3z-0R-HMh"/>
+                                    <constraint firstAttribute="height" constant="40" id="oKv-9q-1qJ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="52" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-GW-hXR">
+                                <rect key="frame" x="0.0" y="270" width="393" height="548"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FaturaHucre" id="xWD-ic-CZc" customClass="FaturaHucre" customModule="InnovaBootcamp6_OdevTableview" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xWD-ic-CZc" id="mmY-80-r23">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggI-Jg-7Qu">
+                                                    <rect key="frame" x="20" y="16" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="hesaplarClr"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left" translatesAutoresizingMaskIntoConstraints="NO" id="xsJ-ti-nC5">
+                                                    <rect key="frame" x="354" y="16" width="19" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="19" id="9hY-ch-0UN"/>
+                                                        <constraint firstAttribute="height" constant="19" id="n09-kN-zGZ"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="xsJ-ti-nC5" secondAttribute="trailing" constant="20" symbolic="YES" id="3Jb-ka-xJR"/>
+                                                <constraint firstItem="xsJ-ti-nC5" firstAttribute="top" secondItem="mmY-80-r23" secondAttribute="top" constant="16" id="4cS-6L-ts1"/>
+                                                <constraint firstItem="ggI-Jg-7Qu" firstAttribute="top" secondItem="mmY-80-r23" secondAttribute="top" constant="16" id="Rkv-Db-wV9"/>
+                                                <constraint firstItem="ggI-Jg-7Qu" firstAttribute="leading" secondItem="mmY-80-r23" secondAttribute="leading" constant="20" id="xBT-xc-3Yo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="arkaPlan"/>
+                                        <connections>
+                                            <outlet property="labelFaturaAd" destination="ggI-Jg-7Qu" id="mvJ-UI-0Dn"/>
+                                            <outlet property="leftButton" destination="xsJ-ti-nC5" id="SMk-2g-9Af"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuO-0c-dJb">
+                                <rect key="frame" x="20" y="200" width="353" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="CCC-2i-vfl">
+                                        <rect key="frame" x="313" y="10" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="EQ6-cb-iPQ"/>
+                                            <constraint firstAttribute="width" constant="25" id="FqR-fz-iyb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="RX0-F5-cr4">
+                                        <rect key="frame" x="20" y="9.3333333333333321" width="30" height="31.999999999999996"/>
+                                        <color key="tintColor" name="hesaplarClr"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="2qO-VA-kBe"/>
+                                            <constraint firstAttribute="width" constant="30" id="ulR-Ub-qVL"/>
+                                        </constraints>
+                                        <imageReference key="image" image="envelope" catalog="system" symbolScale="large" renderingMode="hierarchical" variableValue="1">
+                                            <hierarchicalColors>
+                                                <color name="hesaplarClr"/>
+                                                <color name="hesaplarClr"/>
+                                                <color name="hesaplarClr"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        </preferredSymbolConfiguration>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En Hızlı işlemlerimden getir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uM8-dF-1Kj">
+                                        <rect key="frame" x="55" y="14.999999999999998" width="196" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <color key="textColor" name="hesaplarClr"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="arkaPlan"/>
+                                <constraints>
+                                    <constraint firstItem="uM8-dF-1Kj" firstAttribute="leading" secondItem="RX0-F5-cr4" secondAttribute="trailing" constant="5" id="73r-Xy-ZKi"/>
+                                    <constraint firstItem="RX0-F5-cr4" firstAttribute="top" secondItem="iuO-0c-dJb" secondAttribute="top" constant="10" id="EXX-rp-ul5"/>
+                                    <constraint firstItem="uM8-dF-1Kj" firstAttribute="top" secondItem="iuO-0c-dJb" secondAttribute="top" constant="15" id="Nlo-z6-fdz"/>
+                                    <constraint firstItem="CCC-2i-vfl" firstAttribute="top" secondItem="iuO-0c-dJb" secondAttribute="top" constant="10" id="TDH-fC-IOt"/>
+                                    <constraint firstItem="RX0-F5-cr4" firstAttribute="leading" secondItem="iuO-0c-dJb" secondAttribute="leading" constant="20" id="Zwm-3F-9zd"/>
+                                    <constraint firstAttribute="height" constant="50" id="if3-Gs-6id"/>
+                                    <constraint firstAttribute="trailing" secondItem="CCC-2i-vfl" secondAttribute="trailing" constant="15" id="lh6-zd-ReK"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="line.3.horizontal" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="coC-F3-2xy">
+                                <rect key="frame" x="30" y="48.999999999999993" width="45" height="35.333333333333336"/>
+                                <color key="tintColor" name="EnparaClr"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="2Nb-wc-v2y"/>
+                                    <constraint firstAttribute="height" constant="45" id="NT4-BW-XTB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="coC-F3-2xy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="0j2-eO-G0y"/>
+                            <constraint firstItem="yhe-bs-rwr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="6AW-ju-fMn"/>
+                            <constraint firstItem="iuO-0c-dJb" firstAttribute="top" secondItem="KA8-5g-GIc" secondAttribute="bottom" constant="20" id="8Fm-3N-RXY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iuO-0c-dJb" secondAttribute="trailing" constant="20" id="8UI-oa-KZd"/>
+                            <constraint firstItem="gxB-L7-HNy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Qx-Dw-ccB"/>
+                            <constraint firstItem="hTp-45-BdH" firstAttribute="top" secondItem="gxB-L7-HNy" secondAttribute="bottom" id="BgV-1K-Phz"/>
+                            <constraint firstItem="KA8-5g-GIc" firstAttribute="top" secondItem="hTp-45-BdH" secondAttribute="bottom" id="Dtn-HP-Z6K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NSp-GW-hXR" secondAttribute="trailing" id="LAf-Eh-UOV"/>
+                            <constraint firstItem="coC-F3-2xy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="NJx-nb-4mh"/>
+                            <constraint firstItem="KA8-5g-GIc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O5I-eK-rkQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NSp-GW-hXR" secondAttribute="bottom" id="OZQ-mo-9Rw"/>
+                            <constraint firstItem="gxB-L7-HNy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="P24-XU-ZBa"/>
+                            <constraint firstItem="NSp-GW-hXR" firstAttribute="top" secondItem="iuO-0c-dJb" secondAttribute="bottom" constant="20" id="PTJ-fX-lon"/>
+                            <constraint firstItem="iuO-0c-dJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QBC-Zf-HOC"/>
+                            <constraint firstItem="NSp-GW-hXR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aOo-Pz-Hhg"/>
+                            <constraint firstItem="hTp-45-BdH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bFo-ru-0Wa"/>
+                            <constraint firstAttribute="trailing" secondItem="yhe-bs-rwr" secondAttribute="trailing" constant="30" id="c5p-sR-c4w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KA8-5g-GIc" secondAttribute="trailing" id="mvu-vp-9me"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hTp-45-BdH" secondAttribute="trailing" id="nZ8-ZT-ten"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I2A-OQ-v5m">
+                        <barButtonItem key="backBarButtonItem" title="Geri" id="0XY-Ou-1GD"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bubbleImage" destination="yhe-bs-rwr" id="sNX-83-Cx3"/>
+                        <outlet property="colorStackImage" destination="hTp-45-BdH" id="eSv-fK-5DQ"/>
+                        <outlet property="downIcon" destination="CCC-2i-vfl" id="u5V-ve-R0D"/>
+                        <outlet property="faturaOdeLabel" destination="gxB-L7-HNy" id="eal-SH-Vlo"/>
+                        <outlet property="faturaTipiLabel" destination="uhe-6q-bSw" id="2dD-o7-2Yg"/>
+                        <outlet property="greenBackgroundView" destination="KA8-5g-GIc" id="5R4-jQ-mBF"/>
+                        <outlet property="headerLabel" destination="uM8-dF-1Kj" id="TFc-UD-DAw"/>
+                        <outlet property="headerView" destination="iuO-0c-dJb" id="0b9-jl-6KL"/>
+                        <outlet property="letterImage" destination="RX0-F5-cr4" id="B5g-x2-fyI"/>
+                        <outlet property="menuImage" destination="coC-F3-2xy" id="bp8-KU-BjQ"/>
+                        <outlet property="tableViewEnpara" destination="NSp-GW-hXR" id="mTq-FI-RYJ"/>
+                        <segue destination="8Hc-EM-MDn" kind="show" identifier="detayGecis" id="qdJ-Xd-ywW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.5648854961833" y="-34.507042253521128"/>
+        </scene>
+        <!--DetayVC-->
+        <scene sceneID="jBk-7t-pcA">
+            <objects>
+                <viewController id="8Hc-EM-MDn" customClass="DetayVC" customModule="InnovaBootcamp6_OdevTableview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z9o-GK-Y0O">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="k6E-xI-VlW"/>
+                        <color key="backgroundColor" name="arkaPlan"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zno-fw-6sJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xu6-I6-IGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.3511450381679" y="-29.577464788732396"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oZa-hC-Pjf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oxb-rx-CAX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bGO-JJ-Gyv">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h1E-Fy-4Yy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9r-XS-U2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ColorStack" width="1170" height="12"/>
+        <image name="down" width="24" height="24"/>
+        <image name="envelope" catalog="system" width="128" height="85"/>
+        <image name="left" width="24" height="24"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
+        <namedColor name="EnparaClr">
+            <color red="0.62745098039215685" green="0.32156862745098042" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="arkaPlan">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="greenCizgi">
+            <color red="0.61960784313725492" green="0.7803921568627451" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="hesaplarClr">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
